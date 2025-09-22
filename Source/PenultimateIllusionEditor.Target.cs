@@ -8,6 +8,7 @@ public class PenultimateIllusionEditorTarget : TargetRules
 	public PenultimateIllusionEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
+		bOverrideBuildEnvironment = true;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		ExtraModuleNames.AddRange( new string[] { "PenultimateIllusion" } );
 	}
